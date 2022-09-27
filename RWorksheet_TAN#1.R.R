@@ -6,10 +6,8 @@
 #51, 35, 24, 33, 41.
 
 #a. How many data points?
-df<-data.frame(Data<-c(34, 28, 22, 36, 27, 18, 52, 39, 42, 29,
-                       35, 31, 27, 22, 37, 34, 19, 20, 57, 49,
-                       50, 37, 46, 25, 17, 37, 42, 53, 41, 51, 
-                       35, 24, 33, 41))
+length(age)
+
 #Answer: 34 data points
 
 #b. Write the R code and its output.
@@ -63,6 +61,7 @@ max(age)
 #2.5, 2.3, 2.4, and 2.7.
 
 #a. How many data points?
+length(data)
 #Answer: 12 data points
 
 #b. Write the R code and its output.
@@ -81,10 +80,10 @@ data<-c(2.4, 2.8, 2.1, 2.5, 2.4, 2.2, 2.5, 2.3, 2.5, 2.3, 2.4,2.7)
 #8. Generate a sequence for the following scenario:
 
 #8.1 Integers from 1 to 100.
-seq(1,100)
+seq(1:100)
 
 #8.2 Numbers from 20 to 60
-seq(20,60)
+seq(20:60)
 
 #8.3 Mean of numbers from 20 to 60
 print(mean(20:60))
@@ -94,7 +93,7 @@ print(sum(51:91))
   
   
 #8.5 Integers from 1 to 1,000
-seq(1,1000)
+seq(1:1000)
 [1]    1    2    3    4    5    6    7    8    9   10   11   12   13   14   15   16   17
 [18]   18   19   20   21   22   23   24   25   26   27   28   29   30   31   32   33   34
 [35]   35   36   37   38   39   40   41   42   43   44   45   46   47   48   49   50   51
@@ -159,7 +158,7 @@ seq(1,1000)
 #Answer: 43 data points
 
 #b. Write the R code and its output from 8.1 to 8.4
-#8.1 seq(1,100) = Sequence of number from 1 to 100
+#8.1 seq(1:100) = Sequence of number from 1 to 100
 #[1]   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18
 #[19]  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36
 #[37]  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54
@@ -167,7 +166,7 @@ seq(1,1000)
 #[73]  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89  90
 #[91]  91  92  93  94  95  96  97  98  99 100
 
-#8.2 seq(20,60) = Sequence of number from 20 to 60
+#8.2 seq(20:60) = Sequence of number from 20 to 60
 #[1] 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44
 #[26] 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60
 
@@ -180,6 +179,7 @@ seq(1,1000)
 #c. For 8.5 find only maximum data points until 10
 maxi<-seq(1:10)
 maxi
+length(maxi)
 #Answer: 10 data points
 #[1]  1  2  3  4  5  6  7  8  9 10
 
